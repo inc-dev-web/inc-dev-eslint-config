@@ -1,0 +1,15 @@
+{
+  "name": "@inc-dev/eslint-config-vue",
+  "version": "1.0.0",
+  "packageManager": "yarn@3.6.1",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "@inc-dev/eslint-config": "workspace:^",
+    "eslint-plugin-vue": "^9.20.1"
+  },
+  "peerDependencies": {
+    "eslint": "^8.56.0"
+  }
+}

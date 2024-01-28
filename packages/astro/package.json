@@ -1,0 +1,16 @@
+{
+  "name": "@inc-dev/eslint-config-astro",
+  "version": "1.0.0",
+  "packageManager": "yarn@3.6.1",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "@inc-dev/eslint-config": "workspace:^",
+    "eslint-plugin-astro": "^0.31.3",
+    "eslint-plugin-jsx-a11y": "^6.8.0"
+  },
+  "peerDependencies": {
+    "eslint": "^8.56.0"
+  }
+}

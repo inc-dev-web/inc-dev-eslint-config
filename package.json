@@ -1,0 +1,8 @@
+{
+  "name": "inc-dev-eslint-config",
+  "packageManager": "yarn@3.6.1",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
+}
