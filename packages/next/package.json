@@ -1,0 +1,15 @@
+{
+  "name": "@inc-dev/eslint-config-next",
+  "version": "1.0.1",
+  "packageManager": "yarn@3.6.1",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "@inc-dev/eslint-config-react": "workspace:^",
+    "@next/eslint-plugin-next": "^14.1.0"
+  },
+  "peerDependencies": {
+    "eslint": "^8.56.0"
+  }
+}
