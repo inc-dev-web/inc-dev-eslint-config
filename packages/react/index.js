@@ -6,7 +6,8 @@ module.exports = {
   },
   extends: [
     '@inc-dev',
-    'plugin:react/recommended'
+    'plugin:react/recommended',
+    'plugin:react-hooks/recommended'
   ],
   parserOptions: {
     ecmaFeatures: {
