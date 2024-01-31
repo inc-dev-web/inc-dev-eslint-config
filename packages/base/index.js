@@ -2,7 +2,10 @@ module.exports = {
   "env": {
     "node": true
   },
-  "extends": ["standard"],
+  "extends": [
+    "plugin:prettier/recommended",
+    "standard"
+  ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": "latest",
@@ -18,6 +21,7 @@ module.exports = {
     "no-control-regex": "warn",
     "curly": "error",
     "space-before-function-paren": "off",
+    "comma-dangle": ["warn", "always-multiline"],
     "generator-star-spacing": ["error", "before"],
     "@typescript-eslint/interface-name-prefix": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
