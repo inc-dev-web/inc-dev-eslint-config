@@ -1,6 +1,9 @@
 module.exports = {
   extends: [
     '@inc-dev/eslint-config-react',
-    '@next/eslint-plugin-next'
-  ]
+    'plugin:@next/next/recommended',
+  ],
+  rules: {
+    'react/react-in-jsx-scope': 'off'
+  }
 }
