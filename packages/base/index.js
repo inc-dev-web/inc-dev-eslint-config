@@ -22,7 +22,7 @@ module.exports = {
     "curly": "error",
     "space-before-function-paren": "off",
     "comma-dangle": ["warn", "always-multiline"],
-    "generator-star-spacing": ["error", "before"],
+    "generator-star-spacing": ["error", "after"],
     "@typescript-eslint/interface-name-prefix": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
