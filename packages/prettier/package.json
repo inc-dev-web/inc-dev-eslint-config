@@ -1,0 +1,12 @@
+{
+  "name": "@inc-dev/prettier-config",
+  "version": "1.0.0",
+  "packageManager": "yarn@3.6.1",
+  "main": "./prettier-config.json",
+  "files": [
+    "prettier-config.json"
+  ],
+  "peerDependencies": {
+    "prettier": "^3.2.4"
+  }
+}

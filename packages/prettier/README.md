@@ -1,0 +1,1 @@
+# Inc-Dev Prettier config
