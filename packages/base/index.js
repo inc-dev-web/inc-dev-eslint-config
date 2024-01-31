@@ -17,6 +17,8 @@ module.exports = {
     "no-console": "error",
     "no-control-regex": "warn",
     "curly": "error",
+    "space-before-function-paren": "off",
+    "generator-star-spacing": ["error", "before"],
     "@typescript-eslint/interface-name-prefix": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
