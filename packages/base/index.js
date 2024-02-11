@@ -19,9 +19,12 @@ module.exports = {
     "no-multiple-empty-lines": "error",
     "no-console": "error",
     "no-control-regex": "warn",
-    "curly": "error",
+    "curly": ["error", "all"],
     "space-before-function-paren": "off",
-    "comma-dangle": ["warn", "always-multiline"],
+    // Idents are controlled by prettier
+    "indent": "off",
+    // Comma dangle is controlled by prettier
+    "comma-dangle": "off",
     "generator-star-spacing": ["error", "after"],
     "@typescript-eslint/interface-name-prefix": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
