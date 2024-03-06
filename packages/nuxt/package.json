@@ -1,14 +1,13 @@
 {
   "name": "@inc-dev/eslint-config-nuxt",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "packageManager": "yarn@3.6.1",
   "files": [
     "index.js"
   ],
   "dependencies": {
     "@inc-dev/eslint-config-vue": "workspace:^",
-    "@nuxtjs/eslint-config": "^12.0.0",
-    "@nuxtjs/eslint-config-typescript": "^12.1.0"
+    "@nuxt/eslint-config": "^0.2.0"
   },
   "peerDependencies": {
     "eslint": "^8.56.0"
