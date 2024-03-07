@@ -15,6 +15,9 @@ module.exports = {
       parserOptions: {
         parser: '@typescript-eslint/parser',
         extraFileExtensions: ['.vue']
+      },
+      rules: {
+        'prettier/prettier': 'off'
       }
     }
   ],
