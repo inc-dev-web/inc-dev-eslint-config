@@ -1,23 +1,15 @@
-// module.exports = {
-//   extends: [
-//     '@nuxt/eslint-config',
-//     '@inc-dev/eslint-config-vue'
-//   ]
-// }
-
 require('@rushstack/eslint-patch/modern-module-resolution')
 
 /** @type {import('eslint').ESLint.ConfigData}  */
 module.exports = {
-  parserOptions: {
-    ecmaVersion: 'latest',
-    extraFileExtensions: ['.vue'],
-  },
-  env: { node: true },
-  plugins: ['@typescript-eslint'],
   extends: [
     '@inc-dev/eslint-config-vue'
   ],
+  parser: "@typescript-eslint/parser",
+  parserOptions: {
+
+  },
+  env: { node: true },
   overrides: [
     {
       files: ['*.ts', '*.tsx', '*.mts', '*.cts', '*.vue'],
@@ -32,6 +24,10 @@ module.exports = {
       // Include typescript eslint rules in *.vue files
       // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/src/configs/eslint-recommended.ts
       files: ['*.vue'],
+      parser: "vue-eslint-parser",
+      parserOptions: {
+        parser: "@typescript-eslint/parser",
+      },
       rules: {
         'constructor-super': 'off', // ts(2335) & ts(2377)
         'getter-return': 'off', // ts(2378)

@@ -14,10 +14,11 @@ module.exports = {
       parser: 'vue-eslint-parser',
       parserOptions: {
         parser: '@typescript-eslint/parser',
-        extraFileExtensions: ['.vue']
+        extraFileExtensions: ['.vue'],
       },
       rules: {
-        'prettier/prettier': 'off'
+        'prettier/prettier': 'off',
+        'no-undef': 'off'
       }
     }
   ],
@@ -25,6 +26,6 @@ module.exports = {
     'vue/multi-word-component-names': 'off',
     'vue/padding-line-between-blocks': 'error',
     'no-constant-condition': 'warn',
-    'no-console': 'off'
+    'no-console': 'off',
   },
 }

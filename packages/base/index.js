@@ -23,6 +23,8 @@ module.exports = {
     "space-before-function-paren": "off",
     // Idents are controlled by prettier
     "indent": "off",
+    // Is not recommended to use with TS
+    "no-undef": "off",
     // Comma dangle is controlled by prettier
     "comma-dangle": "off",
     "generator-star-spacing": ["error", "after"],
