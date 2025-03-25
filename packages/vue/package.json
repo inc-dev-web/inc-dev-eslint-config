@@ -1,15 +1,36 @@
 {
   "name": "@inc-dev/eslint-config-vue",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "packageManager": "yarn@3.6.1",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "import": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "require": {
+      "types": "./dist/index.d.cts",
+      "require": "./dist/index.cjs"
+    }
+  },
   "files": [
-    "index.js"
+    "dist/"
   ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean --sourcemap"
+  },
   "dependencies": {
     "@inc-dev/eslint-config": "workspace:^",
-    "eslint-plugin-vue": "^9.20.1"
+    "eslint-plugin-vue": "^10.0.0"
   },
   "peerDependencies": {
-    "eslint": "^8.56.0"
+    "eslint": "^9.23.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2"
   }
 }
